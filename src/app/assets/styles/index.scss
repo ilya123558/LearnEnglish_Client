@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	font-family: 'Exo 2', sans-serif;
+	box-sizing: border-box;
+	line-height: 1.5;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}

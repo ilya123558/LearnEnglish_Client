@@ -1,0 +1,66 @@
+.slice {
+	position: absolute;
+	transform-style: preserve-3d;
+	border: 1px solid #5a5a5a;
+	height: 100%;
+	width: 100%;
+	background-image: linear-gradient(
+		to right bottom,
+		rgb(32, 32, 32),
+		rgb(107, 107, 107),
+		rgb(32, 32, 32)
+	);
+	border-radius: 9px;
+	transition: all 1s;
+	backface-visibility: hidden;
+}
+
+
+.first_slice {
+	position: absolute;
+	transform-style: preserve-3d;
+	border: 1px solid #5a5a5a;
+	height: 100%;
+	width: 100%;
+	background-image: linear-gradient(
+		to right bottom,
+		rgb(32, 32, 32),
+		rgb(107, 107, 107),
+		rgb(32, 32, 32)
+	);
+	border-radius: 9px;
+	transition: all 1s;
+	backface-visibility: hidden;
+	transform-origin: bottom right;
+  animation: identifier 1.5s forwards ease-in-out;
+}
+
+
+.inner {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	transform-style: preserve-3d;
+	justify-content: center;
+	transition: all 0.5;
+	width: 100%;
+	height: 100%;
+	font-weight: 600;
+	font-size: 30px;
+	color: rgba(255, 255, 255, 0.5);
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+	backface-visibility: hidden;
+	cursor: default;
+}
+
+
+@keyframes identifier {
+	0% {
+		transform: rotateZ(0deg) translateX(0px) translateY(0px);
+	}
+  100% {
+    transform: rotateZ(-70deg) translateX(-300px) translateY(400px);
+  }
+
+}
+

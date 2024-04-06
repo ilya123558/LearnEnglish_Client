@@ -1,0 +1,42 @@
+.container {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.text {
+	text-align: center;
+}
+
+.button_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.button {
+  border: 1px solid #c8c8c758;
+  padding: 1px;
+  padding: 0px 15px 4px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 10px;
+  border-radius: 6px;
+  text-shadow: 1px 1px 1px black;
+  box-shadow: 1px 1px 1px 1px black;
+  transition: all 0.3s;
+}
+
+.button__active {
+  box-shadow: inset 1px 1px 1px 1px black;
+  transform: translateY(1px) translateZ(10px);
+}
+
+.button__start {
+  margin-top: 20px;
+  color: rgba(0, 0, 0, 0.294);
+  text-shadow: 1px 1px 1px rgb(240, 240, 240);
+}

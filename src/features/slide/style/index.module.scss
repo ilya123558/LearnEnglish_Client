@@ -1,0 +1,39 @@
+.container {
+	position: relative;
+	perspective: 1000px;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transform: scale(0.75);
+	transition: all 0.7s;
+
+	&__active {
+		transform: scale(1.1) rotateZ(-2deg);
+	}
+
+	&__inactive {
+		transform: scale(1.1) rotateZ(0deg);
+	}
+
+	&__prev {
+		transform: scale(0.75) rotateZ(-10deg);
+	}
+
+	&__next {
+		transform: scale(0.75) rotateZ(10deg);
+	}
+}
+
+.inner {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+
+	&__active {
+		transform: rotateY(180deg) rotateZ(-90deg);
+	}
+}

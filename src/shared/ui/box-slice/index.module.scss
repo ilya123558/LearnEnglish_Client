@@ -1,0 +1,21 @@
+.slice {
+	position: absolute;
+	transform-style: preserve-3d;
+	border: 1px solid #5a5a5a;
+	height: 100%;
+	width: 100%;
+	background-image: linear-gradient(
+		to right bottom,
+		rgb(32, 32, 32),
+		rgb(107, 107, 107),
+		rgb(32, 32, 32)
+	);
+	border-radius: 9px;
+	transition: all 1s;
+	backface-visibility: hidden;
+}
+
+.active {
+	transform: translateZ(1px) rotateZ(0.4deg) translateX(3px);
+	box-shadow: 1px 1px 4px rgb(48, 48, 48);
+}

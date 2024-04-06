@@ -1,0 +1,90 @@
+.fake_card {
+	position: absolute;
+	top: 0px;
+	transform-style: preserve-3d;
+	border: 1px solid #5a5a5a;
+	height: 100%;
+	width: 100%;
+	background-image: linear-gradient(
+		to right bottom,
+		rgb(32, 32, 32),
+		rgb(107, 107, 107),
+		rgb(32, 32, 32)
+	);
+	border-radius: 9px;
+	transition: all 1s;
+	backface-visibility: hidden;
+	transform-origin: bottom right;
+	animation: identifier 1.5s forwards ease-in-out;
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-weight: 600;
+	font-size: 18px;
+	color: rgba(255, 255, 255, 0.5);
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+	padding: 5px 10px;
+}
+
+.counter {
+	display: flex;
+	justify-content: flex-end;
+	width: 100%;
+}
+
+.title {
+	text-align: center;
+	font-size: 26px;
+	margin-top: 30px;
+}
+
+.word {
+	display: inline-block;
+	font-size: 30px;
+	text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.511);
+	color: rgba(255, 255, 255, 0.735);
+}
+
+.input {
+	color: rgba(255, 255, 255, 0.524);
+	text-shadow: 1px 1px 2px rgb(0, 0, 0);
+	font-size: 30px;
+	border: 1px solid rgba(255, 255, 255, 0.303);
+	padding: 0px 10px;
+	border-radius: 10px;
+	box-shadow: inset 1px 1px 1px rgb(0, 0, 0);
+	width: 100%;
+	background: transparent;
+	margin-top: 30px;
+	text-align: center;
+	
+	&:focus {
+		outline: none;
+	}
+}
+
+.button {
+	color: rgba(255, 255, 255, 0.524);
+	text-shadow: 1px 1px 2px rgb(0, 0, 0);
+	font-size: 30px;
+	border: 1px solid rgba(255, 255, 255, 0.303);
+	padding: 0px 20px;
+	border-radius: 10px;
+	box-shadow: 1px 1px 1px rgb(0, 0, 0);
+	width: 70%;
+	background: transparent;
+	margin-top: 40px;
+	text-align: center;
+}
+
+@keyframes identifier {
+	0% {
+		transform: rotateZ(0deg) translateX(0px) translateY(0px);
+	}
+	100% {
+		transform: rotateZ(-70deg) translateX(-300px) translateY(400px);
+	}
+}
